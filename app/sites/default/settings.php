@@ -754,11 +754,11 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'michaelmallari_mysql_db_1',
-  'username' => 'michaelmallari',
-  'password' => 'hello1234U',
+  'database' => getenv('MYSQL_DBNAME'),
+  'username' => getenv('MYSQL_USER'),
+  'password' => getenv('MYSQL_PASSWORD'),
   'prefix' => 'drupal_',
-  'host' => 'michaelmallari-mysql-instance-1.caal1flqsqyn.us-east-1.rds.amazonaws.com',
+  'host' => getenv('MYSQL_URI'),
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
