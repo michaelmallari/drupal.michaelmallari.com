@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'Gyx8rW3s0cVPPU84XhptOlb_lLzgbB8Vw6itEZn4z_7Zxyq1tUUGmFCeKq7sqpqWnnuRHE_4JQ';
 
 /**
  * Deployment identifier.
@@ -753,3 +753,15 @@ $settings['file_scan_ignore_directories'] = [
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'michaelmallari_mysql_db_1',
+  'username' => 'michaelmallari',
+  'password' => 'hello1234U',
+  'prefix' => 'drupal_',
+  'host' => 'michaelmallari-mysql-instance-1.caal1flqsqyn.us-east-1.rds.amazonaws.com',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'minimal';
+$config_directories['sync'] = 'sites/default/files/config_crOzZRe14ARW9QSpG9xR1qI_BXT17nsfNMKzXZYJ-Qby3r2UKrAVvHQVKcc4w9M9W4XWVplmCg/sync';
